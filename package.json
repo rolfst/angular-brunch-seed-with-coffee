@@ -1,5 +1,5 @@
 {
-	"author": "Rolf Strijdhorst <rolfst@gmail.comt@github.com:rolfst/angular-brunch-seed-no-fuss.git",
+	"author": "Rolf Strijdhorst <rolfst@gmail.com>",
 	"name": "angular-brunch-seed-with-coffee",
 	"description": "AngularJS + Brunch + SASS+coffescript",
 	"version": "0.1.0",
@@ -12,7 +12,7 @@
 		"node": "~0.6.10 || ~0.8 || ~0.9 || ~0.10"
 	},
 	"scripts": {
-		"test": "node_modules/.bin/karma start test/karma.conf.js"
+		"test": "node_modules/.bin/karma start test/karma.conf.js",
         "start": "brunch watch --server",
         //"test": "brunch test",
 	},
