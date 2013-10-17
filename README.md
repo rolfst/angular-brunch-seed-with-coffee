@@ -100,10 +100,14 @@ fetch the changes and merge them into your project with git.
       assets/partials/        --> HTML partial files
       assets/index.html       --> Index file
       scripts/                --> base directory for app scripts
-        controllers.js        --> application controllers
-        directives.js         --> custom angular directives
-        filters.js            --> custom angular filters
-        services.js           --> custom angular services
+        controllers           --> base directory for controllers
+            controllers.js    --> application controllers
+        directives            --> base directory for directives
+            directives.js     --> custom angular directives
+        filters               --> base directory for filters
+            filters.js        --> custom angular filters
+        services              --> base directory for services
+            services.js       --> custom angular services
 
       styles/                 --> all custom styles. Acceptable files types inculde: less, sass, scss and stylus
         themes/               --> a place for custom themes
