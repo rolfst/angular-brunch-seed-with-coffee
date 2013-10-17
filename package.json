@@ -1,0 +1,49 @@
+{
+	"author": "Rolf Strijdhorst <rolfst@gmail.comt@github.com:rolfst/angular-brunch-seed-no-fuss.git",
+	"name": "angular-brunch-seed-with-coffee",
+	"description": "AngularJS + Brunch + SASS+coffescript",
+	"version": "0.1.0",
+	"homepage": "https://github.com/rolfst/angular-brunch-seed-with-coffee",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/ocombe/angular-brunch-seed-no-fuss"
+	},
+	"engines": {
+		"node": "~0.6.10 || ~0.8 || ~0.9 || ~0.10"
+	},
+	"scripts": {
+		"test": "node_modules/.bin/karma start test/karma.conf.js"
+        "start": "brunch watch --server",
+        //"test": "brunch test",
+	},
+	"dependencies": {
+		"sass-brunch": "~1.7.0",
+		"javascript-brunch": "~1.7.0",
+        "coffee-script-brunch": ">= 1.0 < 1.5",
+        "coffeelint-brunch": ">= 1.0 < 1.5",
+		"css-brunch": "~1.7.0",
+		"clean-css-brunch": "~1.7.1",
+		"uglify-js-brunch": "~1.7.2",
+		"auto-reload-brunch": "~1.7.0",
+		"brunch": "~1.7.8",
+		"docco": "~0.6.2",
+		"express": "~3.4.0",
+		"karma-ng-scenario": "~0.1.0",
+		"karma-junit-reporter": "~0.1.0",
+		"karma-firefox-launcher": "~0.1.0",
+		"karma-chrome-launcher": "0.1.0",
+		"karma-safari-launcher": "0.1.1",
+		"karma-phantomjs-launcher": "~0.1.0",
+		"karma-html2js-preprocessor": "~0.1.0",
+		"karma-script-launcher": "~0.1.0",
+		"karma-requirejs": "~0.1.0",
+		"karma-jasmine": "0.1.3",
+		"karma-coffee-preprocessor": "~0.1.0",
+		"karma": "~0.10.2",
+		"bower": "~1.2.7"
+	},
+    "devdependencies": {
+        "coffee-script": "~1.3.3",
+        "jade-brunch": "~1.5.1"
+    }
+}
