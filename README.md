@@ -155,6 +155,7 @@ fetch the changes and merge them into your project with git.
 
 ## Contributers
 
-Olivier Combe
+Rolf Strijdhorst
+
 
 For more information on angular please check out <http://angularjs.org>
