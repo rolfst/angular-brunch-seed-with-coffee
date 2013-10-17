@@ -27,7 +27,7 @@ Features:
 
 or if you have **Brunch** installed run:
 
-`brunch new myapp --skeleton https://github.com/ocombe/angular-brunch-seed-no-fuss`
+`brunch new myapp --skeleton https://github.com/rolfst/angular-brunch-seed-with-coffee`
 
 ### Running the app during development
 
