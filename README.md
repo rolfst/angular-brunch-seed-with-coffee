@@ -101,13 +101,13 @@ fetch the changes and merge them into your project with git.
       assets/index.html       --> Index file
       scripts/                --> base directory for app scripts
         controllers           --> base directory for controllers
-            controllers.js    --> application controllers
+            controllers.coffe --> application controllers
         directives            --> base directory for directives
-            directives.js     --> custom angular directives
+            directives.coffee --> custom angular directives
         filters               --> base directory for filters
-            filters.js        --> custom angular filters
+            filters.coffee    --> custom angular filters
         services              --> base directory for services
-            services.js       --> custom angular services
+            services.coffee   --> custom angular services
 
       styles/                 --> all custom styles. Acceptable files types inculde: less, sass, scss and stylus
         themes/               --> a place for custom themes
@@ -116,7 +116,7 @@ fetch the changes and merge them into your project with git.
             _variables.sass   --> bootstrap variables to be used during the compilation process
         app.scss              --> a file for importing styles.
         _custom.scss          --> a file with a custom style example
-      app.js                  --> application definition and routes
+      app.coffee              --> application definition and routes
 
     node_modules              --> NodeJS modules
 
