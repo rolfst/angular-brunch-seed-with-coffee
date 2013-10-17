@@ -1,10 +1,10 @@
-# angular-brunch-seed-no-fuss
+# angular-brunch-seed-with-coffee
 ### A starter project for AngularJS using Brunch.io
 
 [AngularJS](http://angularjs.org) + [Brunch](http://brunch.io)
 
 Features:
-* Full JS & HTML (no Coffeescript, no Jade) / SASS / SCSS automatically compiled on save
+* Full JS & HTML (no Jade) / SASS / SCSS automatically compiled on save
 * HTML5BP, Modernizr, and all the goodness of [initializr](http://www.initializr.com)
 * [Compass-Twitter-Bootstrap](https://github.com/vwall/compass-twitter-bootstrap) integration
 * auto-reload during development saves you from manually refreshing the page
@@ -16,12 +16,13 @@ Features:
 
 - [Original angular-brunch-seed](https://github.com/scotch/angular-brunch-seed)
 - [Livescript](https://github.com/clkao/angular-brunch-seed-livescript) by [Chia-liang Kao](https://github.com/clkao)
-- [angular-brunch-true-north: CoffeeScript + Jade] (https://github.com/scoarescoare/angular-brunch-true-north) - the base for this project
+- [angular-brunch-true-north: CoffeeScript + Jade] (https://github.com/scoarescoare/angular-brunch-true-north)
+- [angular-brunch-seed-no-fuss: Angular + SASS] (https://github.com/ocombe/angular-brunch-seed-no-fuss) - the base of this project
 
-## How to use angular-brunch-seed-no-fuss
+## How to use angular-brunch-seed-with-coffee
 
-* `git clone https://github.com/ocombe/angular-brunch-seed-no-fuss` to clone the **angular-brunch-seed-no-fuss** repository
-* `cd angular-brunch-seed-no-fuss`
+* `git clone https://github.com/rolfst/angular-brunch-seed-with-coffee` to clone the **angular-brunch-seed-with-coffee** repository
+* `cd angular-brunch-seed-with-coffee`
 * `sh scripts/init.sh` to install node packages (or `./scripts/init.bat` on Windows).
 
 or if you have **Brunch** installed run:
