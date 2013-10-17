@@ -101,7 +101,7 @@ fetch the changes and merge them into your project with git.
       assets/index.html       --> Index file
       scripts/                --> base directory for app scripts
         controllers           --> base directory for controllers
-            controllers.coffe --> application controllers
+            controllers.coffee--> application controllers
         directives            --> base directory for directives
             directives.coffee --> custom angular directives
         filters               --> base directory for filters
@@ -130,12 +130,12 @@ fetch the changes and merge them into your project with git.
     test/                     --> test source files and libraries
       e2e/
         app/
-          scenario.js         --> end-to-end specs
+          scenario.coffee     --> end-to-end specs
       unit/
-        controllers.spec.js   --> specs for controllers
-        directives.spec.js    --> specs for directives
-        filters.spec.js       --> specs for filters
-        services.spec.js      --> specs for services
+        controllers.spec.coffee   --> specs for controllers
+        directives.spec.coffee    --> specs for directives
+        filters.spec.coffee       --> specs for filters
+        services.spec.coffee      --> specs for services
       vendor/
         angular/              --> angular testing libraries
           angular-mocks.js    --> mocks that replace certain angular services in tests
