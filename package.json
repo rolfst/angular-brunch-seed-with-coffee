@@ -23,7 +23,7 @@
     "coffeelint-brunch": ">= 1.0 < 1.8",
 
     "css-brunch": ">= 1.0 < 1.8",
-    "sass-brunch": ">= 1.4 < 1.8",
+    "sass-brunch": ">= 1.4 < 1.9",
     "stylus-brunch": ">= 1.0 < 1.8",
 
     "auto-reload-brunch": ">= 1.3 < 1.8",
@@ -32,7 +32,7 @@
     "uglify-js-brunch": "~1.7.2",
     "bower": "~1.2.7",
 
-    "jade-angular-brunch": "~0.0.5",
+    "jade-angularjs-brunch": "~0.0.5",
     "karma-ng-scenario": "~0.1.0",
     "karma-junit-reporter": "~0.1.0",
     "karma-firefox-launcher": "~0.1.0",
