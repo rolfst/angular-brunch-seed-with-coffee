@@ -4,7 +4,7 @@
 [AngularJS](http://angularjs.org) + [Brunch](http://brunch.io)
 
 Features:
-* Full JS & HTML (no Jade) / SASS / SCSS automatically compiled on save
+* Full JS & HTML (with Jade) / SASS / SCSS automatically compiled on save
 * HTML5BP, Modernizr, and all the goodness of [initializr](http://www.initializr.com)
 * [Compass-Twitter-Bootstrap](https://github.com/vwall/compass-twitter-bootstrap) integration
 * auto-reload during development saves you from manually refreshing the page
