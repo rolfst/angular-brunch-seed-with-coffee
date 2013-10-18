@@ -5,6 +5,7 @@ exports.config =
     wrapper: false
   paths:
     public: '_public'
+    "watched": ['app', 'vendor', 'bower_components']
   files:
     javascripts:
       joinTo:
