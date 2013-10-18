@@ -69,7 +69,6 @@ _public
 node_modules/*
 npm-debug.log
 docs
-vendor
 bower_components
 test-result.xml
 test/test-results.xml
