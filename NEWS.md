@@ -3,6 +3,11 @@
 *This file documents the changes in **angular-brunch-true-north** versions that are listed below.*
 
 * * *
+2013-10-18
+
++ moved into new repo https://github.com/rolfst/angular-brunch-seed-with-coffee from 0.1.0
++ updated testacular to karma
++ updated to angular 1.0.8
 
 ### 0.0.1 ###
 
