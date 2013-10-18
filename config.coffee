@@ -1,64 +1,37 @@
 exports.config =
+  # See docs at http://brunch.readthedocs.org/en/latest/config.html.
+  modules:
+    definition: false
+    wrapper: false
+  paths:
+    public: '_public'
+  files:
+    javascripts:
+      joinTo:
+        'js/app.js': /^app/
+        'js/vendor.js': (path) -> path.indexOf("vendor") isnt -1 and path.indexOf("modernizr") is -1
+        'js/modernizr.js': (path) -> path.indexOf('modernizr') isnt -1
+        'test/scenarios.js': /^test(\/|\\)e2e/
+      order:
+        before: [
+          'vendor/scripts/console-helper.js'
+          'vendor/scripts/jquery-1.8.3.js'
+          'vendor/scripts/angular/angular.js'
+          'vendor/scripts/angular/angular-resource.js'
+          'vendor/scripts/angular/angular-cookies.js'
+        ]
 
-# See docs at https://github.com/brunch/brunch/blob/master/docs/config.md
-    modules:
-        definition: false
-        wrapper: false
+    stylesheets:
+      joinTo:
+        'css/app.css': /^(app|vendor)/
+    templates:
+      joinTo: 'js/templates.js'
 
-    paths:
-        'public': "public"
-        watched: ["app", "vendor", "bower_components"]
+  plugins:
+    jade:
+      pretty: yes # Adds pretty-indentation whitespaces to output (false by default)
 
-    files:
-        javascripts:
-            joinTo:
-                "js/app.js": /^app/
-                "js/vendor.js": (path) ->
-                    path = path.replace(/\\/g, "/")
-                    switch path
-
-                    # jquery
-                        when "bower_components/console-polyfill/index.js", "bower_components/jquery/jquery.js"
-
-                        # angular
-                        , "bower_components/angular/angular.js"
-                        , "bower_components/angular-resource/angular-resource.js"
-                        , "bower_components/angular-cookies/angular-cookies.js"
-                        , "bower_components/angular-ui-router/release/angular-ui-router.js"
-
-                        # bootstrap
-                        , "bower_components/sass-boostrap3/dist/js/bootstrap.js"
-                            true
-                        else
-                            false
-
-                "js/modernizr.js": (path) -> # modernizr & respond
-                    path = path.replace(/\\/g, "/")
-                    switch path
-                        when "bower_components/respond/respond.src.js", "bower_components/modernizr/modernizr.js"
-                            true
-                        else
-                            false
-
-                "test/scenarios.js": /^test(\/|\\)e2e/
-
-            order:
-
-            # jquery
-
-            # angular
-
-            # bootstrap
-                before: ["bower_components/respond/respond.src.js", "bower_components/console-polyfill/index.js", "bower_components/jquery/jquery.js", "bower_components/angular/angular.js", "bower_components/bootstrap/dist/js/bootstrap.js"]
-
-        stylesheets:
-            joinTo:
-                "css/app.css": /^app/
-
-    server:
-        path: "jst-server.js"
-
-    conventions:
-        assets: /app(\\|\/)assets(\\|\/)/
-
-    sourceMaps: true
+  server:
+      port: 8000
+  # Enable or disable minifying of result js / css files.
+  # minify: true

@@ -1,2 +1,2 @@
-rd /s /q public
-node_modules/.bin/brunch build -o
+rd /s /q _public
+node_modules/.bin/brunch build -m
