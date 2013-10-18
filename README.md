@@ -29,23 +29,6 @@ or if you have **Brunch** installed run:
 
 `brunch new myapp --skeleton https://github.com/rolfst/angular-brunch-seed-with-coffee`
 
-### Using Jade
-
-You will find the jade files in the `app` and `app/partials` directories. Upon save the Jade files will be compiled to HTML
-and placed in the `app/assets` folder. Do not modify the files in the `app/assets` folder as they will be overriden with subsequent
-changes to their `*.jade` counter part.
-
-### Using html
-
-By default angular-brunch-seed uses jade templates. If you would prefer to use HTML run the command:
-
-```
-./scripts/compile-html.sh
-```
-All Jade file will be compiled to HTML and be placed in the `app/assets` directory. Addtionally, the `*.jade`
-files will be removed from the project. Any changes that you make to the `app/assets/**/*.html` files will now appear in the
-browser.
-
 ### Running the app during development
 
 * `./scripts/server.sh` to serve using **Brunch**
