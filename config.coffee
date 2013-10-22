@@ -10,7 +10,7 @@ exports.config =
     javascripts:
       joinTo:
         'js/app.js': /^app/
-        'js/vendor.js': (path) -> path.indexOf("vendor") isnt -1 and path.indexOf("modernizr") is -1
+        'js/vendor.js': (path) -> path.indexOf("vendor") isnt -1 and path.indexOf("bower_components") isnt -1 and path.indexOf("modernizr") is -1
         'js/modernizr.js': (path) -> path.indexOf('modernizr') isnt -1
         'test/scenarios.js': /^test(\/|\\)e2e/
       order:
@@ -24,7 +24,7 @@ exports.config =
 
     stylesheets:
       joinTo:
-        'css/app.css': /^(app|vendor)/
+        'css/app.css': /^(app|bower_components|vendor)/
     templates:
       joinTo: 'js/templates.js'
 
