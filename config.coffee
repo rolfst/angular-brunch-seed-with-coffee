@@ -5,7 +5,7 @@ exports.config =
     wrapper: false
   paths:
     public: '_public'
-    "watched": ['app', 'vendor', 'bower_components']
+    "watched": ['app', 'vendor']
   files:
     javascripts:
       joinTo:
@@ -14,22 +14,17 @@ exports.config =
         'test/scenarios.js': (path) -> /^test(\/|\\)e3e/.test(path) or (/^bower_components/.test(path) and /mock/.test(path))
       order:
         before: [
-          'vendor/scripts/console-helper.js'
-          'vendor/scripts/jquery-1.8.3.js'
-          'vendor/scripts/angular/angular.js'
-          'vendor/scripts/angular/angular-resource.js'
+          'bower_components/jquery/jquery.js'
+          'bower_components/angular/angular.js'
+          'bower_component/sangular-resource/angular-resource.js'
           'vendor/scripts/angular/angular-cookies.js'
         ]
 
     stylesheets:
       joinTo:
-        'css/app.css': /^(app|bower_components|vendor)/
+        'css/app.css': /^(app|vendor)/
     templates:
       joinTo: 'js/templates.js'
-
-  plugins:
-    jade:
-      pretty: yes # Adds pretty-indentation whitespaces to output (false by default)
 
   server:
       port: 8000
