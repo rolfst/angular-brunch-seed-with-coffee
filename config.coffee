@@ -9,10 +9,9 @@ exports.config =
   files:
     javascripts:
       joinTo:
-        'js/app.js': /^app/
-        'js/vendor.js': (path) -> path.indexOf("vendor") isnt -1 and path.indexOf("bower_components") isnt -1 and path.indexOf("modernizr") is -1
-        'js/modernizr.js': (path) -> path.indexOf('modernizr') isnt -1
-        'test/scenarios.js': /^test(\/|\\)e2e/
+        'js/app.js': /^app\/scripts/
+        'js/vendor.js': (path) -> /^vendor/.test(path) or (/^bower_components/.test(path) and not /mock/.test(path))
+        'test/scenarios.js': (path) -> /^test(\/|\\)e3e/.test(path) or (/^bower_components/.test(path) and /mock/.test(path))
       order:
         before: [
           'vendor/scripts/console-helper.js'
