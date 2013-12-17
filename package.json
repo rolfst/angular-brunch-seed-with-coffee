@@ -45,7 +45,9 @@
     "karma-coffee-preprocessor": "~0.1.0",
     "karma": "~0.10.2",
     "jade-brunch": ">= 1.4.0 <= 1.4.5 || >= 1.4.8 < 1.5",
-    "static-jade-brunch": ">= 1.4.0 <= 1.4.5 || >= 1.4.8 < 1.5"
+    "static-jade-brunch": ">= 1.4.0 <= 1.4.5 || >= 1.4.8 < 1.5",
+    "protractor-coffee-preprocessor":"~0.0.1",
+    "protractor":"~0.14.0"
   },
   "devDependencies": {
     "coffee-script": "~1.6"
